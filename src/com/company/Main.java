@@ -3,29 +3,33 @@ package com.company;
 public class Main {
 
 
+    public static void main(String[] args) {
+        System.out.println(maxFinder(19,35));
+        System.out.println(maxFinder(20, 40));
+        System.out.println(maxFinder(40,25));
+        System.out.println(maxFinder(10,35));
+        System.out.println(maxFinder(50, 20));
 
-    public static String getSquare(int age, int temperature) {
+
+    }
+
+
+
+    public static String maxFinder(int age, int temperature) {
         if (age >= 20 && age <= 40 && temperature >= -20 && temperature <= 30)
-            return "Можно идти гулять";
+            return "You can go for a walk";
 
         else if (age < 20 && temperature >= 0 && temperature <= 28)
-            return "Можно итди гулять";
-        else if (age < 45 && temperature >= -10 && temperature <= 25)
-            return "Можно итди гулять";
+            return "You can go for a walk";
+        else if (age > 45 && temperature >= -10 && temperature <= 25)
+            return "You can go for a walk";
         else
-            return "Оставайтесь дома";
+            return "stay at home";
 
     }
-    public static void main(String[] args) {
 
-        getSquare(20, 40);
-        getSquare(40, 25);
-        getSquare(50, 35);
-        getSquare(70, 20);
-        System.out.println(getSquare(20,40));
-        System.out.println(getSquare(40,25));
-        System.out.println(getSquare(50,35));
-        System.out.println(getSquare(70,20));
+
+
 
     }
 
@@ -39,7 +43,7 @@ public class Main {
 
 
 
-}
+
 
 
 
